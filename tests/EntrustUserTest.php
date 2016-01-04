@@ -33,12 +33,14 @@ class EntrustUserTest extends PHPUnit_Framework_TestCase
         |------------------------------------------------------------
         */
         $user->shouldReceive('belongsToMany')
-            ->with('role_table_name')
+            ->with('role_table_name', 'assigned_roles_table_name', 'user_id', 'role_id')
             ->andReturn($belongsToMany)
             ->once();
 
         Config::shouldReceive('get')->once()->with('entrust.role')
             ->andReturn('role_table_name');
+        Config::shouldReceive('get')->once()->with('entrust.role_user_table')
+            ->andReturn('assigned_roles_table_name');
 
         /*
         |------------------------------------------------------------
@@ -940,7 +942,7 @@ class HasRoleUser implements EntrustUserInterface
 
     public $roles;
 
-    public function belongsToMany($role)
+    public function belongsToMany($role, $assignedRolesTable)
     {
     }
 }
