@@ -1,4 +1,4 @@
-# ENTRUST (Laravel 5 Package)
+# ENTRUST (Laravel 5.2 Package)
 
 [![Build Status](https://travis-ci.org/Zizaco/entrust.svg)](https://travis-ci.org/Zizaco/entrust)
 [![License](https://poser.pugx.org/zizaco/entrust/license.svg)](https://packagist.org/packages/zizaco/entrust)
@@ -6,7 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/zizaco/entrust.svg)](https://packagist.org/packages/zizaco/entrust)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/cc4af966-809b-4fbc-b8b2-bb2850e6711e/small.png)](https://insight.sensiolabs.com/projects/cc4af966-809b-4fbc-b8b2-bb2850e6711e)
 
-Entrust is a succinct and flexible way to add Role-based Permissions to **Laravel 5**.
+Entrust is a succinct and flexible way to add Role-based Permissions to **Laravel 5.2**.
 
 If you are looking for the Laravel 4 version, take a look [Release 1.3.x](https://github.com/Zizaco/entrust/tree/1.3.0) release tree.
 
